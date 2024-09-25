@@ -11,7 +11,7 @@ export default function ProfilDetail() {
 
   return (
     <Container>
-      <Typography> Detail Profilu </Typography>
+      <Typography> Pridanie Príspevku </Typography>
     </Container>
   );
 

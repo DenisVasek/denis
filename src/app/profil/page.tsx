@@ -11,7 +11,7 @@ export default function ProfilList() {
 
   return (
     <Container>
-      <Typography> Zoznam Profilov </Typography>
+      <Typography> Váš profil </Typography>
     </Container>
   );
 
