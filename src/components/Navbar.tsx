@@ -1,13 +1,12 @@
-// src/components/Navbar.tsx
-"use client"; // Add this line at the top to mark this component as a client component
+"use client";
 
 import React from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
-import SearchIcon from '@mui/icons-material/Search';
-import AddBoxIcon from '@mui/icons-material/AddBox'; // You can also switch this to AddIcon if preferred
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
+import PostAddIcon from '@mui/icons-material/PostAdd';
+import LoginIcon from '@mui/icons-material/Login';
+import HowToRegIcon from '@mui/icons-material/HowToReg';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -25,37 +24,37 @@ const Navbar = () => {
             sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
         >
             <BottomNavigationAction
-                label="Home"
+                label="Domov" // Home
                 icon={<HomeIcon />}
                 component={Link}
-                href="/" // Link to Home
+                href="/"
             />
             <BottomNavigationAction
-                label="Search"
-                icon={<SearchIcon />}
-                component={Link}
-                href="/hladanie" // Link to Search
-            />
-            <BottomNavigationAction
-                label="Add"
-                icon={<AddBoxIcon />}
-                component={Link}
-                href="/pridat" // Link to Add
-            />
-            <BottomNavigationAction
-                label="Notifications"
-                icon={<NotificationsIcon />}
-                component={Link}
-                href="/notifikacie" // Link to Notifications
-            />
-            <BottomNavigationAction
-                label="Profile"
+                label="Profily" // Profiles
                 icon={<PersonIcon />}
                 component={Link}
-                href="/profil" // Link to Profile
+                href="/profil"
+            />
+            <BottomNavigationAction
+                label="Príspevky" // Posts
+                icon={<PostAddIcon />}
+                component={Link}
+                href="/prispevok"
+            />
+            <BottomNavigationAction
+                label="Prihlásenie" // Login
+                icon={<LoginIcon />}
+                component={Link}
+                href="/auth/prihlasenie"
+            />
+            <BottomNavigationAction
+                label="Registrácia" // Register
+                icon={<HowToRegIcon />}
+                component={Link}
+                href="/auth/registracia"
             />
         </BottomNavigation>
     );
 };
 
-export default Navbar; // Export as Navbar
+export default Navbar;
