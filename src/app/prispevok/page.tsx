@@ -5,13 +5,13 @@
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-export const metadata = { title: `Zoznam Profilov | KapuKakaKiki` };
+export const metadata = { title: `Zoznam Príspevkov | KapuKakaKiki` };
 
 export default function ProfilList() {
 
   return (
     <Container>
-      <Typography> Zoznam Profilov </Typography>
+      <Typography> Zoznam Príspevkov </Typography>
     </Container>
   );
 
