@@ -1,17 +1,17 @@
 
-// src/app/prispevok/[id]/komentare/[komentareId]/page.tsx
+// src/app/prispevok/[prispevokId]/komentar/page.tsx
 
 
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-export const metadata = { title: `Komentár Príspevku | KapuKakaKiki` };
+export const metadata = { title: `Zoznam komentárov | KapuKakaKiki` };
 
-export default function CommentDetail() {
+export default function CommentsList() {
 
   return (
     <Container>
-      <Typography> Komentár Príspevku </Typography>
+      <Typography> Zoznam Komentárov </Typography>
     </Container>
   );
 
